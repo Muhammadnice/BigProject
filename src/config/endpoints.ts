@@ -1,0 +1,41 @@
+const Endpoints = {
+  auth: {
+    register: "/auth/register",
+    login: "/auth/login",
+    refresh: "/auth/refresh",
+    logout: "/auth/logout",
+    forgotPassword: "/auth/forgot-password",
+    resetPassword: "/auth/reset-password",
+    verifyEmail: "/auth/verify-email",
+    me: "/auth/me",
+  },
+  user: {
+    changePassword: "/user/password",
+    sessions: "/user/sessions",
+    session: (id: string) => `/user/sessions/${id}`,
+  },
+  public: {
+    stats: "/public/stats",
+    testimonials: "/public/testimonials",
+    courses: "/public/courses",
+    course: (slug: string) => `/public/courses/${slug}`,
+    instructors: "/public/instructors",
+    instructor: (id: string) => `/public/instructors/${id}`,
+    blog: "/public/blog",
+    blogCategories: "/public/blog/categories",
+    blogPost: (slug: string) => `/public/blog/${slug}`,
+    blogComment: (slug: string) => `/public/blog/${slug}/comments`,
+    contact: "/public/contact",
+  },
+  student: {
+    enrollments: "/student/enrollments",
+    enrollment: (courseId: string) => `/student/enrollments/${courseId}`,
+    checkout: "/student/enrollments/checkout",
+    lessonProgress: (lessonId: string) => `/student/lessons/${lessonId}/progress`,
+    certificates: "/student/certificates",
+    claimCertificate: (courseId: string) => `/student/certificates/claim/${courseId}`,
+    reviews: "/student/reviews",
+    myReviews: "/student/reviews/mine",
+  },
+};
+export default Endpoints;

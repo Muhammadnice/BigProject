@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#2563EB" opacity="0.1"/>
+  
+  <!-- Book/Education icon -->
+  <g transform="translate(100, 100)">
+    <!-- Left page -->
+    <path d="M -35 -40 L -35 50 Q -20 60 0 60 L 0 -40 Z" fill="#2563EB" opacity="0.7"/>
+    
+    <!-- Right page -->
+    <path d="M 0 -40 L 0 60 Q 20 60 35 50 L 35 -40 Z" fill="#2563EB"/>
+    
+    <!-- Bookmark/Light element -->
+    <circle cx="0" cy="-25" r="8" fill="#3B82F6"/>
+    <circle cx="0" cy="-25" r="5" fill="#60A5FA"/>
+    
+    <!-- Lines representing text -->
+    <line x1="-25" y1="-15" x2="25" y2="-15" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="-25" y1="0" x2="25" y2="0" stroke="white" stroke-width="2" opacity="0.6"/>
+    <line x1="-25" y1="15" x2="20" y2="15" stroke="white" stroke-width="2" opacity="0.6"/>
+    <line x1="-25" y1="30" x2="15" y2="30" stroke="white" stroke-width="2" opacity="0.6"/>
+  </g>
+</svg>
